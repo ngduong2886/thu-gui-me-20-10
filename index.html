@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf5ee">
+  <meta name="description" content="Một góc nhỏ đầy hoa và yêu thương dành tặng những người phụ nữ tuyệt vời nhân ngày 20/10.">
+  <title>Gửi em một mùa hoa · 20/10</title>
+  <style>
+    :root{--paper:#fbf5ee;--paper-deep:#f5e9df;--ink:#462433;--plum:#642d45;--rose:#ae4e69;--rose-light:#e5a7b3;--gold:#bb8953;--green:#697b61;--serif:"Palatino Linotype",Palatino,Georgia,serif;--sans:Arial,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:86px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+    button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+    ::selection{background:#e8b7c2;color:var(--ink)}
+    .grain{position:fixed;inset:0;z-index:8;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E")}
+    .progress{position:fixed;z-index:12;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--rose),var(--gold));transition:width .12s}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,24px);position:sticky;top:0;z-index:10;background:#fbf5eeed;backdrop-filter:blur(14px);border-bottom:1px solid #6e3c4814}
+    .wordmark{font:italic 21px var(--serif);color:var(--plum);display:flex;align-items:center;gap:10px}.wordmark b{font:normal 19px var(--sans);color:var(--rose)}
+    .nav-links{display:flex;align-items:center;gap:32px;font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#795b64}
+    .nav-links a{transition:color .2s}.nav-links a:hover{color:var(--rose)}
+    .nav-date{font:12px var(--sans);letter-spacing:.15em;color:var(--rose);border:1px solid #d4a3a6;padding:9px 14px;border-radius:40px}
+    .hero{min-height:calc(100svh - 76px);padding:60px max(7vw,24px) 72px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:3vw;position:relative;overflow:hidden;background:radial-gradient(ellipse at 77% 50%,#f4daddaa,transparent 35%),radial-gradient(ellipse at 10% 100%,#f3e4d6,transparent 32%),var(--paper)}
+    .hero-copy{max-width:670px;position:relative;z-index:2;padding-bottom:16px}
+    .kicker{display:inline-flex;align-items:center;gap:11px;color:var(--rose);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+    .kicker:before{content:"";width:30px;height:1px;background:var(--gold)}
+    h1{font:400 clamp(66px,8.4vw,120px)/.88 var(--serif);letter-spacing:-.045em;color:var(--plum);margin:30px 0 26px}
+    h1 em{font-weight:400;color:var(--rose);display:block;padding-left:12%;margin-top:14px}
+    .hero-text{max-width:475px;color:#795c66;font:17px/1.85 var(--serif);margin:0 0 30px}
+    .hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+    .btn{border:0;background:var(--plum);color:white;padding:15px 22px;border-radius:40px;font-weight:700;font-size:12px;letter-spacing:.04em;box-shadow:0 9px 22px #642d452b;transition:transform .2s,box-shadow .2s,background .2s}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px #642d4540;background:#78334f}.btn:focus-visible,.icon-btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #dba4ae;outline-offset:3px}
+    .text-link{background:none;border:0;padding:8px 0;color:#795c66;font-size:12px;border-bottom:1px solid #bd9fa4}
+    .countdown{margin-top:48px;display:flex;align-items:center;gap:12px;color:#997d7d;font-size:11px;letter-spacing:.07em}.countdown strong{color:var(--rose);font-size:13px;letter-spacing:0}
+    .visual{height:min(690px,68vw);min-height:450px;position:relative;display:grid;place-items:center}
+    .sun{width:min(40vw,500px);aspect-ratio:1;border-radius:50%;position:absolute;background:radial-gradient(circle at 42% 32%,#fff9f0 0,#f4d9d9 55%,#e8b8c1 100%);box-shadow:inset 0 0 0 1px #fff9,0 32px 80px #9e53601e;animation:sunrise 5s ease-in-out infinite alternate}
+    .sun:before,.sun:after{content:"";position:absolute;inset:18px;border:1px solid #fff9;border-radius:50%}.sun:after{inset:34px;border-color:#fff8}
+    .flower{position:relative;width:min(34vw,410px);height:min(34vw,410px);min-width:300px;min-height:300px;filter:drop-shadow(0 20px 24px #783d4824);animation:sway 6s ease-in-out infinite;cursor:pointer;z-index:2}
+    .petal{position:absolute;left:50%;top:50%;width:35%;height:48%;border:1px solid #fff8;border-radius:53% 53% 46% 46%;transform-origin:50% 88%;background:linear-gradient(145deg,#fff8f3 2%,#f0c2c9 48%,#cd7e8f 100%)}
+    .petal:nth-child(1){transform:translate(-50%,-88%) rotate(0)}.petal:nth-child(2){transform:translate(-50%,-88%) rotate(45deg)}.petal:nth-child(3){transform:translate(-50%,-88%) rotate(90deg)}.petal:nth-child(4){transform:translate(-50%,-88%) rotate(135deg)}.petal:nth-child(5){transform:translate(-50%,-88%) rotate(180deg)}.petal:nth-child(6){transform:translate(-50%,-88%) rotate(225deg)}.petal:nth-child(7){transform:translate(-50%,-88%) rotate(270deg)}.petal:nth-child(8){transform:translate(-50%,-88%) rotate(315deg)}
+    .flower-center{position:absolute;left:50%;top:50%;width:22%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:7px solid #f7e3c5;background:radial-gradient(circle at 35% 30%,#fff2bf,#dca75f 65%,#ae7045);box-shadow:0 0 0 5px #cb8a8c55}
+    .stem{position:absolute;left:51%;top:69%;width:8px;height:180px;border-radius:10px;transform:rotate(14deg);background:linear-gradient(90deg,#526e53,#a4b087,#627c5c);z-index:1}.leaf{position:absolute;z-index:2;left:53%;top:76%;width:78px;height:38px;border-radius:100% 0 100% 0;transform:rotate(-12deg);background:linear-gradient(130deg,#aebc92,#557252)}.leaf.two{left:32%;top:84%;transform:rotate(198deg) scale(.83)}
+    .visual-note{position:absolute;right:0;bottom:8%;writing-mode:vertical-rl;font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:#a17d80}.spark{position:absolute;color:#c49759;animation:twinkle 2.7s ease-in-out infinite}.sp1{top:17%;right:13%;font-size:27px}.sp2{top:35%;left:6%;font-size:20px;animation-delay:.7s}.sp3{bottom:21%;right:13%;font-size:15px;animation-delay:1.4s}
+    .section{padding:115px max(7vw,24px);position:relative}.section-head{text-align:center;max-width:710px;margin:0 auto 58px}.overline{font-size:10px;color:var(--rose);letter-spacing:.23em;text-transform:uppercase;font-weight:700}.section h2{font:400 clamp(38px,5vw,64px)/1.05 var(--serif);color:var(--plum);letter-spacing:-.03em;margin:16px 0}.section-head p{color:#876c73;font:16px/1.8 var(--serif);margin:0}
+    .wish-section{background:#f2e6dc}.wish-card{max-width:930px;margin:auto;display:grid;grid-template-columns:.74fr 1.26fr;border-radius:20px;background:#fffaf4;box-shadow:0 26px 65px #643b3112;overflow:hidden;border:1px solid #fff}
+    .wish-aside{padding:42px 36px;background:linear-gradient(145deg,#6c334d,#492637);color:white;position:relative;overflow:hidden}.wish-aside:after{content:"✿";position:absolute;font-size:180px;line-height:1;color:#ffffff0a;right:-23px;bottom:-38px}.wish-aside .overline{color:#e9b9a4}.wish-aside h3{font:400 32px/1.1 var(--serif);margin:17px 0}.wish-aside p{font:14px/1.8 var(--serif);color:#f2dfe0;max-width:250px}
+    .wish-form{padding:38px 42px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field label{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#956f78;margin:0 0 9px;font-weight:700}.field input,.field select{width:100%;border:1px solid #ead9d6;border-radius:10px;padding:13px 14px;background:#fffdfa;color:var(--ink);font-size:14px}.field input::placeholder{color:#b59da0}.wish-output{min-height:112px;padding:19px 20px;margin:23px 0 18px;border-radius:12px;background:#f8eee9;color:#643d4c;font:18px/1.65 var(--serif);border-left:3px solid var(--rose)}
+    .form-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.form-actions .btn{padding:13px 18px}.outline-btn{border:1px solid #d6b7b6;color:var(--plum);background:transparent;padding:12px 16px;border-radius:30px;font-size:11px;font-weight:700;transition:background .2s}.outline-btn:hover{background:#f4e8e4}.hint{font-size:10px;color:#a38c8d;margin-left:auto}
+    .reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1050px;margin:auto}.reason{padding:32px 30px 34px;border:1px solid #eadbd3;border-radius:16px;background:#fffbf6;min-height:225px;transition:transform .3s,box-shadow .3s}.reason:hover{transform:translateY(-7px);box-shadow:0 20px 40px #693a3515}.reason .number{font:italic 14px var(--serif);color:var(--gold)}.reason .icon{font-size:28px;margin:22px 0 12px}.reason h3{font:400 25px var(--serif);color:var(--plum);margin:0 0 9px}.reason p{font:13px/1.7 var(--serif);color:#886e74;margin:0}
+    .letter-section{background:linear-gradient(120deg,#613149,#452434);color:white;overflow:hidden}.letter-section:before{content:"";position:absolute;width:600px;height:600px;border:1px solid #ffffff12;border-radius:50%;top:-320px;right:-90px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff05}.letter-section .section-head{position:relative}.letter-section .overline{color:#edc092}.letter-section h2{color:#fff7ef}.letter-section .section-head p{color:#e8cfd3}
+    .envelope-wrap{max-width:720px;margin:0 auto;perspective:1200px}.envelope{position:relative;min-height:300px;border-radius:12px;background:#f2d9ce;box-shadow:0 26px 75px #2b14223b;overflow:hidden;cursor:pointer;transition:transform .35s}.envelope:hover{transform:translateY(-4px)}.env-back{position:absolute;inset:0;background:linear-gradient(145deg,#f6e5d9,#eac6bd)}.env-flap{position:absolute;top:0;left:0;width:0;height:0;border-left:min(360px,50vw) solid transparent;border-right:min(360px,50vw) solid transparent;border-top:175px solid #dba9a4;transform-origin:top;transition:transform .8s;z-index:3;filter:drop-shadow(0 4px 4px #60304218)}.env-pocket{position:absolute;bottom:0;left:0;width:0;height:0;border-left:min(360px,50vw) solid #eed0c7;border-right:min(360px,50vw) solid #e6c2bd;border-bottom:180px solid #e7c1b8;z-index:4}.seal{position:absolute;z-index:5;left:50%;top:54%;transform:translate(-50%,-50%);width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:var(--rose);color:white;font-size:21px;box-shadow:0 5px 14px #612c4440;transition:opacity .3s}.letter{position:absolute;z-index:2;left:8%;right:8%;bottom:10px;min-height:260px;padding:26px 32px 36px;text-align:center;background:#fffaf1;color:#583345;border-radius:4px 4px 0 0;transform:translateY(115%);transition:transform .85s cubic-bezier(.2,.75,.22,1);box-shadow:0 0 20px #572d3717}.letter .letter-title{font:italic 24px var(--serif);color:var(--rose);margin:3px}.letter p{font:15px/1.75 var(--serif);max-width:530px;margin:13px auto}.letter small{font:italic 13px var(--serif);color:#977079}.envelope.open .env-flap{transform:rotateX(180deg);z-index:1}.envelope.open .letter{z-index:6;transform:translateY(0);transition-delay:.22s}.envelope.open .seal{opacity:0;pointer-events:none}.letter-caption{text-align:center;color:#e2c7cd;font-size:11px;letter-spacing:.08em;margin:19px 0 0}
+    .last-word{text-align:center;padding:95px 24px 105px;background:var(--paper);position:relative}.last-word .flower-mini{font-size:28px;color:var(--rose)}.last-word h2{font:italic 42px/1.15 var(--serif);color:var(--plum);margin:17px 0}.last-word p{font:14px/1.8 var(--serif);color:#866c72;max-width:500px;margin:auto}.footer{padding:23px 6vw;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#efe1d8;color:#977981;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.footer button{border:0;background:none;color:var(--plum);font-weight:700;font-size:11px}
+    .float-layer{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}.fall{position:absolute;top:-40px;animation:fall linear forwards;text-shadow:0 3px 8px #7a38451a}.toast{position:fixed;z-index:25;left:50%;bottom:28px;transform:translate(-50%,20px);padding:12px 18px;background:#492637;color:white;border-radius:40px;font-size:12px;opacity:0;pointer-events:none;transition:.3s;box-shadow:0 10px 30px #2b142233}.toast.show{opacity:1;transform:translate(-50%,0)}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .75s,transform .75s}.reveal.visible{opacity:1;transform:translateY(0)}
+    @keyframes sway{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(2deg) translateY(-9px)}}@keyframes sunrise{from{transform:scale(.97)}to{transform:scale(1.03)}}@keyframes twinkle{0%,100%{opacity:.45;transform:scale(.82)}50%{opacity:1;transform:scale(1.15)}}@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(480deg);opacity:0}}
+    @media(max-width:850px){.nav{height:66px}.nav-links{gap:16px;font-size:10px}.nav-date{font-size:10px;padding:8px 11px}.hero{min-height:auto;grid-template-columns:1fr;padding-top:24px;padding-bottom:46px;text-align:center}.hero-copy{order:2;margin:auto}.kicker{justify-content:center}h1{font-size:clamp(66px,14vw,100px);margin:22px 0}.hero-text{font-size:16px;margin:0 auto 23px}.hero-actions{justify-content:center}.countdown{justify-content:center;margin-top:28px}.visual{order:1;height:390px;min-height:0}.sun{width:min(75vw,360px)}.flower{width:290px;height:290px;min-width:290px;min-height:290px}.visual-note{right:5%;bottom:3%}.section{padding:85px 6vw}.wish-card{grid-template-columns:1fr}.wish-aside{padding:28px 32px}.wish-aside p{max-width:560px}.reasons{gap:12px}.reason{padding:24px 21px}.reason h3{font-size:22px}}
+    @media(max-width:560px){.nav{padding:0 18px}.wordmark{font-size:17px}.nav-links{display:none}.nav-date{margin-left:auto}.hero{padding:13px 20px 46px}.visual{height:330px}.sun{width:270px}.flower{width:250px;height:250px;min-width:250px;min-height:250px}.stem{height:130px}.leaf{width:60px;height:30px}.visual-note{font-size:8px;right:0}.hero-copy{padding:0}.hero-text{font-size:15px}.countdown{font-size:10px}.section{padding:72px 20px}.section-head{margin-bottom:36px}.section-head p{font-size:14px}.wish-aside{padding:25px}.wish-form{padding:25px 20px}.fields{grid-template-columns:1fr;gap:14px}.wish-output{font-size:16px;min-height:120px}.hint{width:100%;margin:0}.reasons{grid-template-columns:1fr}.reason{min-height:0;padding:24px}.reason .icon{margin:13px 0 7px}.envelope{min-height:260px}.env-flap{border-left-width:50vw;border-right-width:50vw;border-top-width:145px}.env-pocket{border-left-width:50vw;border-right-width:50vw;border-bottom-width:150px}.letter{left:5%;right:5%;min-height:235px;padding:18px 18px}.letter .letter-title{font-size:21px}.letter p{font-size:13px;line-height:1.6}.last-word{padding:75px 24px}.last-word h2{font-size:34px}.footer{justify-content:center;flex-wrap:wrap;text-align:center;font-size:9px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div><div class="grain" aria-hidden="true"></div><div class="float-layer" id="floatLayer" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="wordmark" href="#top" aria-label="Về đầu trang"><b>✿</b> Gửi em một mùa hoa</a>
+    <nav class="nav-links" aria-label="Điều hướng"><a href="#loi-chuc">Lời chúc</a><a href="#yeu-thuong">Yêu thương</a><a href="#la-thu">Thư gửi mẹ</a></nav>
+    <div class="nav-date">20 · 10</div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal visible">
+        <div class="kicker">Ngày Phụ nữ Việt Nam</div>
+        <h1>Một ngày<span><em>rực rỡ</em></span></h1>
+        <p class="hero-text">Dành tặng em — cô gái khiến những ngày bình thường cũng trở nên dịu dàng. Mong hôm nay có hoa, có quà, có những lời thương em xứng đáng được nghe.</p>
+        <div class="hero-actions"><a class="btn" href="#loi-chuc">Tạo lời chúc của riêng em <span aria-hidden="true">↗</span></a><button class="text-link" id="rainButton" type="button">Gọi một cơn mưa hoa ✿</button></div>
+        <div class="countdown"><span>Đếm ngược đến ngày 20/10</span><strong id="countdownText">Chúc mừng ngày 20/10!</strong></div>
+      </div>
+      <div class="visual" aria-label="Bông hoa hồng minh họa, chạm để thả cánh hoa">
+        <div class="sun"></div><span class="spark sp1">✧</span><span class="spark sp2">✦</span><span class="spark sp3">✧</span>
+        <div class="stem"></div><div class="leaf"></div><div class="leaf two"></div>
+        <div class="flower" id="bigFlower" role="button" tabindex="0" aria-label="Thả cánh hoa may mắn"><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="flower-center"></i></div>
+        <div class="visual-note">Chạm vào đóa hoa để nhận điều ước</div>
+      </div>
+    </section>
+    <section class="section wish-section" id="loi-chuc">
+      <div class="section-head reveal"><div class="overline">Gửi đúng người · đúng lời</div><h2>Lời chúc của riêng em</h2><p>Chọn người nhận, thêm tên nếu muốn, rồi để trang web viết giúp bạn một lời chúc thật ngọt ngào.</p></div>
+      <div class="wish-card reveal">
+        <aside class="wish-aside"><div class="overline">Một chút yêu thương</div><h3>Viết lời thương,<br>đừng ngại nhé.</h3><p>Một lời chúc chân thành có thể khiến ngày của ai đó đẹp hơn rất nhiều.</p></aside>
+        <div class="wish-form">
+          <div class="fields">
+            <div class="field"><label for="recipient">Gửi lời chúc đến</label><select id="recipient"><option value="em">Người thương</option><option value="me">Mẹ</option><option value="ban">Bạn thân</option><option value="co">Cô giáo</option><option value="chi">Chị / em gái</option></select></div>
+            <div class="field"><label for="nameInput">Tên người nhận (không bắt buộc)</label><input id="nameInput" type="text" maxlength="32" placeholder="Ví dụ: Linh, mẹ yêu…"></div>
+          </div>
+          <div class="wish-output" id="wishOutput" aria-live="polite">Chúc em luôn rạng rỡ theo cách riêng của mình, được yêu thương thật nhiều và có một ngày 20/10 thật đáng nhớ.</div>
+          <div class="form-actions"><button class="btn" id="generateButton" type="button">Tạo lời chúc mới ✨</button><button class="outline-btn" id="copyButton" type="button">Sao chép lời chúc</button><button class="outline-btn" id="shareButton" type="button">Chia sẻ ↗</button><span class="hint" id="formHint">Có thể tạo lời chúc mới bao nhiêu lần tùy thích</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="yeu-thuong">
+      <div class="section-head reveal"><div class="overline">Những điều làm nên em</div><h2>Em xứng đáng được yêu thương</h2><p>Không chỉ hôm nay. Mà là mỗi ngày, theo cách dịu dàng và chân thành nhất.</p></div>
+      <div class="reasons">
+        <article class="reason reveal"><span class="number">01 / Tỏa sáng</span><div class="icon">☼</div><h3>Vẻ đẹp riêng</h3><p>Em chẳng cần giống bất kỳ ai. Cách em cười, cách em sống — đã là một điều thật đẹp.</p></article>
+        <article class="reason reveal"><span class="number">02 / Kiên cường</span><div class="icon">❀</div><h3>Mạnh mẽ dịu dàng</h3><p>Em đi qua bao điều bằng trái tim mềm mại và ý chí kiên cường. Điều đó thật đáng quý.</p></article>
+        <article class="reason reveal"><span class="number">03 / Hạnh phúc</span><div class="icon">♡</div><h3>Được nâng niu</h3><p>Mong em luôn nhận lại thật nhiều yêu thương, bình yên và những điều em vẫn hằng mong.</p></article>
+      </div>
+    </section>
+    <section class="section letter-section" id="la-thu">
+      <div class="section-head reveal"><div class="overline">Có một lá thư dành cho mẹ</div><h2>Một lá thư gửi mẹ</h2><p>Con muốn gửi mẹ một lời thương, không chỉ riêng ngày 20/10.</p></div>
+      <div class="envelope-wrap reveal"><div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Mở thư gửi mẹ" aria-expanded="false">
+        <div class="env-back"></div>
+        <article class="letter"><div class="letter-title">Mẹ yêu của con,</div><p>Nhân ngày 20/10, con chúc mẹ luôn mạnh khỏe, bình an và lúc nào cũng nở nụ cười thật tươi. Cảm ơn mẹ vì những yêu thương, hy sinh và vòng tay ấm áp mẹ dành cho con. Con mong mỗi ngày của mẹ đều nhẹ nhàng, vui vẻ và ngập tràn những điều tốt đẹp. Con yêu mẹ nhiều lắm!</p><small>Con của mẹ ♡</small></article>
+        <div class="env-flap"></div><div class="env-pocket"></div><div class="seal">♡</div>
+      </div><p class="letter-caption" id="letterCaption">Chạm vào phong thư để mở thư gửi mẹ</p></div>
+    </section>
+    <section class="last-word"><div class="flower-mini">✿</div><h2>Chúc em luôn là đóa hoa<br>đang nở rộ.</h2><p>Hãy gửi trang nhỏ này cho một người phụ nữ tuyệt vời mà bạn muốn nói lời cảm ơn hôm nay.</p></section>
+  </main>
+  <footer class="footer"><span>Được làm bằng tất cả yêu thương · 20.10</span><button id="topButton" type="button">Lên đầu trang ↑</button></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    const wishes = {
+      em:[
+        'Chúc {name} luôn rạng rỡ theo cách riêng của mình, được yêu thương thật nhiều và có một ngày 20/10 thật đáng nhớ.',
+        '20/10 vui vẻ nhé {name}! Mong mọi dịu dàng trên thế giới này đều tìm đến em, hôm nay và cả những ngày sau.',
+        'Chúc {name} luôn xinh đẹp, tự tin và hạnh phúc. Cảm ơn em đã khiến những ngày bình thường cũng trở nên thật đặc biệt.',
+        'Gửi {name} một đóa hoa và thật nhiều thương mến. Mong em luôn bình yên, cười thật tươi và được nâng niu như em xứng đáng.'
+      ],
+      me:[
+        'Chúc {name} 20/10 thật vui và bình yên. Cảm ơn mẹ vì luôn là vòng tay ấm áp nhất. Con thương mẹ nhiều lắm!',
+        'Mong {name} luôn mạnh khỏe, rạng rỡ và có thật nhiều niềm vui mỗi ngày. Hôm nay mẹ hãy để con chăm sóc mẹ nhé!',
+        'Chúc {name} của con một ngày 20/10 ngập tràn hoa và yêu thương. Cảm ơn mẹ vì tất cả những điều tuyệt vời mẹ đã dành cho con.'
+      ],
+      ban:[
+        '20/10 vui vẻ nha {name}! Chúc bà luôn xinh, luôn vui, ví luôn rủng rỉnh và gặp toàn chuyện dễ thương!',
+        'Chúc {name} có một ngày 20/10 ngọt như trà sữa. Mong mọi điều tốt đẹp đều tìm đến bà!',
+        'Chúc {name} lúc nào cũng tự tin, tỏa sáng và có hội bạn thân bên cạnh để cười thật nhiều. Thương bà!'
+      ],
+      co:[
+        'Nhân ngày 20/10, em kính chúc {name} luôn mạnh khỏe, hạnh phúc và giữ mãi nụ cười dịu dàng. Cảm ơn cô vì đã luôn tận tâm dìu dắt chúng em.',
+        'Kính chúc {name} một ngày Phụ nữ Việt Nam thật nhiều niềm vui. Mong cô luôn bình an, rạng rỡ và nhận được thật nhiều yêu thương.',
+        'Chúc {name} 20/10 thật ấm áp và ý nghĩa. Những bài học cùng sự tận tình của cô sẽ luôn là điều chúng em trân trọng.'
+      ],
+      chi:[
+        'Chúc {name} 20/10 thật vui nha! Chị/em luôn là người tuyệt vời, xinh đẹp và đáng yêu nhất nhà mình.',
+        'Mong {name} luôn được yêu thương, gặp nhiều may mắn và thực hiện được mọi điều chị/em ấp ủ.',
+        'Chúc chị/em gái có một ngày 20/10 ngập tràn hoa, quà và tiếng cười. Có chị/em trong đời là điều thật tuyệt!'
+      ]
+    };
+    const recipient=document.querySelector('#recipient'),nameInput=document.querySelector('#nameInput'),wishOutput=document.querySelector('#wishOutput');
+    let previous=-1,currentTemplate='';
+    function makeWish(){const list=wishes[recipient.value];let index=Math.floor(Math.random()*list.length);if(list.length>1&&index===previous)index=(index+1+Math.floor(Math.random()*(list.length-1)))%list.length;previous=index;currentTemplate=list[index];const name=nameInput.value.trim();const fallback={em:'em',me:'mẹ',ban:'bà bạn thân',co:'cô',chi:'chị/em'}[recipient.value];wishOutput.textContent=currentTemplate.replaceAll('{name}',name||fallback);}
+    function toast(message){const el=document.querySelector('#toast');el.textContent=message;el.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove('show'),2200)}
+    document.querySelector('#generateButton').addEventListener('click',()=>{makeWish();toast('Đã viết một lời chúc mới cho bạn ✨');petalRain(8)});
+    recipient.addEventListener('change',()=>{previous=-1;makeWish()});
+    nameInput.addEventListener('input',()=>{const fallback={em:'em',me:'mẹ',ban:'bà bạn thân',co:'cô',chi:'chị/em'}[recipient.value];wishOutput.textContent=currentTemplate.replaceAll('{name}',nameInput.value.trim()||fallback)});
+    document.querySelector('#copyButton').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(wishOutput.textContent);toast('Đã sao chép lời chúc vào clipboard 💌')}catch{toast('Trình duyệt chưa cho phép sao chép — bạn hãy chọn và sao chép lời chúc nhé.')}});
+    document.querySelector('#shareButton').addEventListener('click',async()=>{const data={title:'Gửi em một mùa hoa · 20/10',text:wishOutput.textContent,url:location.href};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(`${data.text}\n${data.url}`);toast('Đã sao chép lời chúc kèm đường dẫn!')}}catch(error){if(error.name!=='AbortError')toast('Chưa thể chia sẻ lúc này.')}});
+    function petalRain(count=24){const layer=document.querySelector('#floatLayer'),symbols=['✿','❀','♡','✧','🌸'];for(let i=0;i<count;i++){const item=document.createElement('span');item.className='fall';item.textContent=symbols[Math.floor(Math.random()*symbols.length)];item.style.left=`${Math.random()*100}vw`;item.style.setProperty('--drift',`${Math.random()*190-95}px`);item.style.animationDuration=`${2.7+Math.random()*2.2}s`;item.style.animationDelay=`${Math.random()*.7}s`;item.style.fontSize=`${15+Math.random()*15}px`;item.style.color=['#b94d6b','#d28594','#bd9259','#8f6674'][Math.floor(Math.random()*4)];layer.appendChild(item);setTimeout(()=>item.remove(),5500)}}
+    document.querySelector('#rainButton').addEventListener('click',()=>{petalRain(48);toast('Gửi em một cơn mưa hoa 🌸')});
+    const flower=document.querySelector('#bigFlower');flower.addEventListener('click',()=>{petalRain(22);toast('Điều ước dịu dàng sẽ tìm đến em ♡')});flower.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flower.click()}});
+    const envelope=document.querySelector('#envelope');function toggleLetter(){const open=envelope.classList.toggle('open');envelope.setAttribute('aria-expanded',String(open));document.querySelector('#letterCaption').textContent=open?'Lá thư đã mở — mẹ yêu ơi, con thương mẹ ♡':'Chạm vào phong thư để mở thư gửi mẹ';if(open)petalRain(14)}envelope.addEventListener('click',toggleLetter);envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleLetter()}});
+    document.querySelector('#topButton').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    function updateCountdown(){const now=new Date(),year=now.getFullYear();let target=new Date(year,9,20);if(now>target)target=new Date(year+1,9,20);const days=Math.ceil((target-now)/(1000*60*60*24));document.querySelector('#countdownText').textContent=days===0?'Hôm nay là ngày 20/10!':`Còn ${days} ngày nữa`}
+    makeWish();updateCountdown();
+    window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;document.querySelector('#progress').style.width=`${max>0?scrollY/max*100:0}%`},{passive:true});
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal:not(.visible)').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
